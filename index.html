@@ -8,12 +8,14 @@
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Reflection Room Logo" class="logo" />
+    <a href="#">
+      <img src="images/logo.png" alt="Reflection Room Logo" class="logo" />
+    </a>
     <h1>The Reflection Room</h1>
     <blockquote>“Inner excellence is about being the best version of yourself — every single moment.”<br>– Jim Murphy</blockquote>
   </header>
 
-  <nav>
+  <nav role="navigation" aria-label="Main Navigation">
     <a href="#about">About</a>
     <a href="#events">Events</a>
     <a href="#advisor">Advisor</a>
@@ -39,36 +41,39 @@
   <section id="advisor">
     <h2>Meet Our Advisor</h2>
     <div class="card">
-      <img src="images/nyachae.jpeg" alt="Nyandusi Nyachae" class="advisor-photo" />
+      <img src="images/nyachae.jpeg" alt="Nyandusi Nyachae, advisor of The Reflection Room" class="advisor-photo" loading="lazy" />
       <p><strong>Nyandusi Nyachae</strong>, affectionately known as "Coach Dus," is a World Campus Coordinator and Instructor at Penn State's College of Education. With a passion for empowering students, he guides individuals to discover and manifest their potential. As the advisor of The Reflection Room, he inspires our journey towards personal growth and reflective learning.</p>
       <p>He is also the author of <em>Jump Start Your Dreams: How to Discover, Activate & Manifest Your Greatness</em>, a motivational guide that encourages readers to pursue their aspirations with purpose and determination.</p>
       <p><a href="https://ed.psu.edu/directory/nyandusi-nyachae" target="_blank">Learn more about him</a></p>
     </div>
   </section>
 
-  <div class="gallery">
-    <div class="img-container">
-      <img src="images/reflective_activity.png" alt="Reflection Room Potluck">
-      <p class="caption">Reflection Room Potluck</p>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <div class="img-container">
+        <img src="images/reflective_activity.png" alt="Reflective Activity in The Reflection Room" loading="lazy">
+        <p class="caption">Reflective Activity</p>
+      </div>
+      <div class="img-container">
+        <img src="images/student_discussion.png" alt="Student Discussion" loading="lazy">
+        <p class="caption">Student Discussion</p>
+      </div>
+      <div class="img-container">
+        <img src="images/campus_event.png" alt="Campus Event" loading="lazy">
+        <p class="caption">Campus Event</p>
+      </div>
+      <div class="img-container">
+        <img src="images/student_discussion.png" alt="Student Discussion Revisited" loading="lazy">
+        <p class="caption">Student Discussion Revisited</p>
+      </div>
     </div>
-    <div class="img-container">
-      <img src="images/student_discussion.png" alt="Student Discussion">
-      <p class="caption">Student Discussion</p>
-    </div>
-    <div class="img-container">
-      <img src="images/campus_event.png" alt="Campus Event">
-      <p class="caption">Campus Event</p>
-    </div>
-    <div class="img-container">
-      <img src="images/student_discussion.png" alt="Student Discount">
-      <p class="caption">Student Discount</p>
-    </div>
-  </div>
+  </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
     <div class="card">
-      <form>
+      <form action="#" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
 
