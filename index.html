@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +7,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header>
     <img src="logo.png" alt="Reflection Room Logo" style="max-width: 160px; margin-top: 1rem; border-radius: 12px;">
     <h1>The Reflection Room</h1>
@@ -17,75 +15,56 @@
 
   <nav>
     <a href="#about">About</a>
-    <a href="#book">Current Read</a>
     <a href="#events">Events</a>
-    <a href="#join">Join</a>
-    <a href="#gallery">Gallery</a>
+    <a href="#advisor">Advisor</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section id="about">
     <h2>About Us</h2>
     <div class="card">
-      <p>Welcome to The Reflection Room — a cozy club of thinkers, dreamers, and doers. We are a group of curious minds dedicated to self-growth through reflection, discussion, and action. Founded in Spring 2028 in a class taught by Professor Nyandusi Nyachae, we’ve grown from a book club to a mindset movement.</p>
-      <p>Whether you're an aspiring entrepreneur or someone simply trying to live with intention, we believe that greatness starts from within. And we're here to grow together — slowly, reflectively, and intentionally.</p>
-    </div>
-  </section>
-
-  <section id="book">
-    <h2>What We're Reading</h2>
-    <div class="card">
-      <p>We’re currently diving into <strong>Inner Excellence</strong> by Jim Murphy — a book about mastering your mindset and stepping into the best version of yourself. Join us as we reflect on chapters, apply the lessons, and share our own growth stories.</p>
+      <p>The Reflection Room is a space dedicated to cultivating the entrepreneurial mindset through the power of reflection. Founded in Spring 2028 as a book club from an LDT 100 class taught by Professor Nyandusi Nyachae, our mission is to help individuals grow using their own minds. We believe in the transformative power of introspection and community.</p>
     </div>
   </section>
 
   <section id="events">
     <h2>Upcoming Events</h2>
     <div class="card">
-      <p><strong>🌿 Potluck – April 24</strong><br>Bring food. Bring thoughts. Bring heart. Let’s eat and reflect together.</p>
+      <p><strong>Potluck Gathering</strong><br>
+      Join us for a potluck on Thursday, April 24th, from 6:30 to 7:30 PM at Chamber 121. Bring a dish to share and enjoy an evening of reflection and community.</p>
     </div>
   </section>
 
-  <section id="join">
-    <h2>Join The Room</h2>
+  <section id="advisor">
+    <h2>Meet Our Advisor</h2>
     <div class="card">
-      <p>We're open to everyone who wants to grow. No dues. No expectations. Just presence.</p>
-      <form>
-        <label>Your Name:</label>
-        <input type="text" required>
-        <label>Your Email:</label>
-        <input type="email" required>
-        <label>Why do you want to join?</label>
-        <textarea rows="4" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </section>
-
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="https://source.unsplash.com/featured/?books" alt="Books">
-      <img src="https://source.unsplash.com/featured/?cozy" alt="Cozy space">
-      <img src="https://source.unsplash.com/featured/?discussion" alt="Discussion">
+      <img src="images/nyachae.jpg" alt="Nyandusi Nyachae" style="max-width: 200px; border-radius: 12px; float: right; margin-left: 1.5rem; margin-bottom: 1rem;">
+      <p><strong>Nyandusi Nyachae</strong>, affectionately known as "Coach Dus," is a World Campus Coordinator and Instructor at Penn State's College of Education. With a passion for empowering students, he guides individuals to discover and manifest their potential. As the advisor of The Reflection Room, he inspires our journey towards personal growth and reflective learning.</p>
+      <p>He is also the author of <em>Jump Start Your Dreams: How to Discover, Activate & Manifest Your Greatness</em>, a motivational guide that encourages readers to pursue their aspirations with purpose and determination.</p>
+      <p><a href="https://ed.psu.edu/directory/nyandusi-nyachae" target="_blank">Learn more about him</a></p>
     </div>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
+    <h2>Contact Us</h2>
     <div class="card">
-      <p>We're working on making things easier — but for now, you can reach us through:</p>
-      <ul>
-        <li>Email: reflectionclub@email.com</li>
-        <li>Instagram: @reflectionroom.psu</li>
-        <li>Discord: link coming soon!</li>
-      </ul>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
     </div>
   </section>
 
   <footer>
-    &copy; 2028 The Reflection Room · Made with clarity, coffee, and community.
+    <p>&copy; 2025 The Reflection Room. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
