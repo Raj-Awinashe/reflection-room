@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;600&display=swap');
+
+:root {
+  --cream: #f3f0e7;
+  --brown: #4b3c2e;
+  --emerald: #4c9a82;
+  --sand: #e8e1d4;
+  --accent: #b9a88f;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--cream);
+  color: var(--brown);
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to right, var(--accent), var(--sand));
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header blockquote {
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--emerald);
+  margin-top: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--sand);
+  padding: 1rem;
+  gap: 2rem;
+  font-weight: 600;
+}
+
+nav a {
+  color: var(--brown);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--emerald);
+  text-decoration: underline;
+}
+
+section {
+  padding: 3rem 10%;
+  animation: fadeIn 0.6s ease-in;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--brown);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-left: 6px solid var(--emerald);
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+}
+
+button {
+  background-color: var(--emerald);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3b7a68;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery img {
+  width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  background-color: var(--sand);
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--brown);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
