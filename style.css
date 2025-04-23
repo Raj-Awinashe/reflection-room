@@ -178,49 +178,52 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* ---- MEMBERS SECTION ---- */
-.members-container {
-  display: flex;
-  flex-wrap: wrap;
+/* 💼 MEMBERS GRID STYLE */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  justify-content: center;
   margin-top: 2rem;
 }
 
-.member-card {
+.member-tile {
   background-color: var(--white);
-  border-left: 6px solid var(--taupe);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  max-width: 550px;
-  padding: 1rem;
+  border: 1px solid var(--sand);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.member-photo {
+.member-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.member-tile img {
   width: 120px;
   height: 120px;
   object-fit: cover;
-  border-radius: 12px;
-  margin-right: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
   border: 2px solid var(--sand);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-.member-info h3 {
-  margin: 0 0 0.5rem;
+.member-tile h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
   color: var(--brown);
 }
 
-.member-info p {
-  margin: 0.3rem 0;
-  color: var(--brown);
+.member-tile p {
   font-size: 0.95rem;
+  margin: 0.2rem 0;
+  color: var(--brown);
 }
 
-/* ---- RESPONSIVE ---- */
+/* Responsive Tweaks */
 @media (max-width: 768px) {
   section {
     padding: 2rem 5%;
@@ -232,19 +235,8 @@ button:hover {
     margin: 1rem auto;
     max-width: 100%;
   }
-
-  .member-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .member-photo {
-    margin: 0 0 1rem;
-  }
 }
 
-/* ---- ANIMATION ---- */
 @keyframes fadeIn {
   from {
     opacity: 0;
